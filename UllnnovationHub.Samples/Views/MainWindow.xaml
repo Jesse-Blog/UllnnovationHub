@@ -2,7 +2,7 @@
     <Grid>
         <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible">
             <TabControl TabStripPlacement="Left">
-                <TabItem Width="150" Header="Button">
+                <TabItem Width="150" Header="Button" IsEnabled="False">
                     <StackPanel Orientation="Vertical">
                         <StackPanel Grid.Row="1" Margin="5" Orientation="Vertical">
                             <StackPanel Orientation="Horizontal">
@@ -24,12 +24,10 @@
                 <TabItem Width="150" Header="GroupBox">
                     <ScrollViewer HorizontalScrollBarVisibility="Auto">
                         <UniformGrid Columns="2" Rows="2">
-                            <GroupBox Margin="10" Header="测试" Style="{StaticResource BaseGroupBoxStyle}">
-                            </GroupBox>
-                            <GroupBox Margin="10" Header="测试" Style="{StaticResource SqureShadowHeaderGroupBoxStyle}">
+                            <GroupBox Margin="10" Header="测试">
 
                             </GroupBox>
-                            <GroupBox Margin="10" Header="测试" Style="{StaticResource RoundedShadowHeaderGroupBoxStyle}">
+                            <GroupBox Margin="10" Header="测试" Style="{StaticResource LeftHeaderGroupBoxStyle}">
 
                             </GroupBox>
                         </UniformGrid>
@@ -41,7 +39,11 @@
                     <UniformGrid Columns="2" Rows="2">
                         <TabControl TabStripPlacement="Top">
                             <TabItem Header="测试1">
-                                <TextBlock Text="内容1" />
+                                <StackPanel>
+                                    <TextBlock Foreground="Black" Text="内容1" />
+                                    <TextBox Text="1111" />
+                                </StackPanel>
+
                             </TabItem>
                             <TabItem Header="测试2">
                                 <TextBlock Text="内容2" />

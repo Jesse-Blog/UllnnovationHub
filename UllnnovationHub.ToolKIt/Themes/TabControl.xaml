@@ -25,11 +25,23 @@
                             <Setter Property="Foreground" Value="{StaticResource IsSelected.Foreground}" />
                             <Setter TargetName="border01" Property="Background" Value="{StaticResource TabItem.IsSelected.Background}" />
                             <Setter TargetName="border01" Property="BorderBrush" Value="{StaticResource TabItem.IsSelected.BorderBrush}" />
+                            <Setter Property="Cursor" Value="Hand" />
                         </Trigger>
-                        <Trigger Property="IsMouseOver" Value="True">
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="border01" Property="Background" Value="{StaticResource TabItem.IsEnabled.Background}" />
+                            <Setter TargetName="border01" Property="BorderBrush" Value="{StaticResource TabItem.IsEnabled.BorderBrush}" />
+                            <Setter Property="Cursor" Value="No" />
+                        </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsSelected" Value="False" />
+                                <Condition Property="IsMouseOver" Value="True" />
+                            </MultiTrigger.Conditions>
                             <Setter TargetName="border01" Property="BorderBrush" Value="{StaticResource TabItem.IsMouseOver.BorderBrush}" />
                             <Setter TargetName="border01" Property="Background" Value="{StaticResource TabItem.IsMouseOver.Background}" />
-                        </Trigger>
+                            <Setter Property="Cursor" Value="Hand" />
+
+                        </MultiTrigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>

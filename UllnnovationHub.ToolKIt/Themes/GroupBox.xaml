@@ -3,7 +3,7 @@
         <ResourceDictionary Source="/UllnnovationHub.ToolKIt;component/Themes/ColorStyle.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
-    <!--  基础样式:直角边框  -->
+    <!--  基础样式:直角header中心显示  -->
     <Style x:Key="BaseGroupBoxStyle" TargetType="{x:Type GroupBox}">
         <Setter Property="Background" Value="{StaticResource GroupBox.Background}" />
         <Setter Property="Foreground" Value="{StaticResource GroupBox.Header.Foreground}" />
@@ -13,7 +13,7 @@
                     <Border Background="{TemplateBinding Background}" BorderBrush="{StaticResource GroupBox.Header.BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
                         <DockPanel>
                             <Border x:Name="Header" Padding="5" Background="{StaticResource GroupBox.Header.Background}" BorderBrush="{StaticResource GroupBox.Header.BorderBrush}" BorderThickness="0,0,0,1" DockPanel.Dock="Top">
-                                <ContentPresenter ContentSource="Header" RecognizesAccessKey="True" />
+                                <ContentPresenter HorizontalAlignment="Center" ContentSource="Header" RecognizesAccessKey="True" />
                             </Border>
                             <ContentPresenter Margin="10" />
                         </DockPanel>
@@ -23,39 +23,17 @@
         </Setter>
     </Style>
 
-    <!--  样式1：直角阴影边框  -->
-    <Style x:Key="SqureShadowHeaderGroupBoxStyle" BasedOn="{StaticResource BaseGroupBoxStyle}" TargetType="{x:Type GroupBox}">
+    <!--  基础样式:直角header中心显示  -->
+    <Style x:Key="LeftHeaderGroupBoxStyle" TargetType="{x:Type GroupBox}">
+        <Setter Property="Background" Value="{StaticResource GroupBox.Background}" />
+        <Setter Property="Foreground" Value="{StaticResource GroupBox.Header.Foreground}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type GroupBox}">
-                    <Border Background="{TemplateBinding Background}" BorderBrush="#5B95FF" BorderThickness="{TemplateBinding BorderThickness}">
+                    <Border Background="{TemplateBinding Background}" BorderBrush="{StaticResource GroupBox.Header.BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
                         <DockPanel>
-                            <Border x:Name="Header" Padding="5" Background="#5B95FF" BorderBrush="#5B95FF" BorderThickness="0,0,0,1" DockPanel.Dock="Top">
-                                <Border.Effect>
-                                    <DropShadowEffect Direction="270" Opacity="0.7" ShadowDepth="3" Color="DarkGray" />
-                                </Border.Effect>
-                                <ContentPresenter ContentSource="Header" RecognizesAccessKey="True" />
-                            </Border>
-                            <ContentPresenter Margin="10" />
-                        </DockPanel>
-                    </Border>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
-
-    <!--  样式2：圆角阴影边框  -->
-    <Style x:Key="RoundedShadowHeaderGroupBoxStyle" BasedOn="{StaticResource BaseGroupBoxStyle}" TargetType="{x:Type GroupBox}">
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="{x:Type GroupBox}">
-                    <Border Background="{TemplateBinding Background}" BorderBrush="#5B95FF" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10,10,20,20">
-                        <DockPanel>
-                            <Border x:Name="Header" Padding="5" Background="#5B95FF" BorderBrush="#5B95FF" BorderThickness="0,0,0,1" CornerRadius="10,10,5,5" DockPanel.Dock="Top">
-                                <Border.Effect>
-                                    <DropShadowEffect Direction="270" Opacity="0.7" ShadowDepth="3" Color="DarkGray" />
-                                </Border.Effect>
-                                <ContentPresenter ContentSource="Header" RecognizesAccessKey="True" />
+                            <Border x:Name="Header" Padding="5" Background="{StaticResource GroupBox.Header.Background}" BorderBrush="{StaticResource GroupBox.Header.BorderBrush}" BorderThickness="0,0,0,1" DockPanel.Dock="Top">
+                                <ContentPresenter HorizontalAlignment="Left" ContentSource="Header" RecognizesAccessKey="True" />
                             </Border>
                             <ContentPresenter Margin="10" />
                         </DockPanel>

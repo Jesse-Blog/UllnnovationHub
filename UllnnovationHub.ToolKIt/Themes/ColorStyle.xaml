@@ -45,11 +45,21 @@
     <SolidColorBrush x:Key="TabItem.IsMouseOver.Background" Color="#CADDE9" />
     <SolidColorBrush x:Key="TabItem.IsSelected.BorderBrush" Color="#B1C7E1" />
     <SolidColorBrush x:Key="TabItem.IsSelected.Background" Color="#729BBC" />
+    <SolidColorBrush x:Key="TabItem.IsEnabled.BorderBrush" Color="#FFFFFFFF" />
+    <SolidColorBrush x:Key="TabItem.IsEnabled.Background" Color="#FFD9D9D9" />
 
     <!--  GroupBox相关  -->
     <SolidColorBrush x:Key="GroupBox.Header.Foreground" Color="#5B81A0" />
     <SolidColorBrush x:Key="GroupBox.Header.Background" Color="#EDEDF3" />
     <SolidColorBrush x:Key="GroupBox.Header.BorderBrush" Color="#B0B9C4" />
     <SolidColorBrush x:Key="GroupBox.Background" Color="#F0F3F6" />
+    <!--  Button相关  -->
+    <SolidColorBrush x:Key="Button.Background" Color="#EDEDF3" />
+    <SolidColorBrush x:Key="Button.Foreground" Color="Black" />
+    <SolidColorBrush x:Key="Button.BorderBrush" Color="#B0B9C4" />
+    <SolidColorBrush x:Key="Button.IsMouseOver.BorderBrush" Color="#22599D" />
+    <SolidColorBrush x:Key="Button.IsMouseOver.Background" Color="#CCDFEB" />
+    <SolidColorBrush x:Key="Button.IsPressed.BorderBrush" Color="#B1C7E1" />
+    <SolidColorBrush x:Key="Button.IsPressed.Background" Color="#729BBC" />
 
 </ResourceDictionary>
