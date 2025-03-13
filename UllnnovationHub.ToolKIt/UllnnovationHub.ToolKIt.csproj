@@ -11,6 +11,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="Helper\MessageBox.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Page Update="Themes\Button.xaml">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Page>

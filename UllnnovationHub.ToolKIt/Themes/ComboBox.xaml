@@ -10,10 +10,6 @@
             <Setter.Value>
                 <!--  ComBoxItem  -->
                 <Style TargetType="ComboBoxItem">
-                    <Setter Property="MinHeight" Value="22">
-                    </Setter>
-                    <Setter Property="MinWidth" Value="60">
-                    </Setter>
                     <Setter Property="Template">
                         <Setter.Value>
                             <ControlTemplate TargetType="ComboBoxItem">
@@ -151,10 +147,6 @@
             <Setter.Value>
                 <!--  ComBoxItem  -->
                 <Style TargetType="ComboBoxItem">
-                    <Setter Property="MinHeight" Value="22">
-                    </Setter>
-                    <Setter Property="MinWidth" Value="60">
-                    </Setter>
                     <Setter Property="Template">
                         <Setter.Value>
                             <ControlTemplate TargetType="ComboBoxItem">
@@ -288,5 +280,5 @@
         </Setter>
     </Style>
 
-    <Style x:Key="{x:Type ComboBox}" BasedOn="{StaticResource BaseComBoxStyle}" TargetType="{x:Type ComboBox}" />
+    <Style x:Key="{x:Type ComboBox}" BasedOn="{StaticResource RoundedCardComBoxStyle}" TargetType="{x:Type ComboBox}" />
 </ResourceDictionary>

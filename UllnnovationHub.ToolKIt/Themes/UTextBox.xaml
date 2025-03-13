@@ -18,7 +18,7 @@
         <Setter Property="FocusedForeground" Value="Black" />
         <Setter Property="Foreground" Value="Black" />
         <Setter Property="PlaceholderForeground" Value="Black" />
-        <Setter Property="Placeholder" Value="Input text...." />
+        <Setter Property="Placeholder" Value="" />
         <Setter Property="BorderThickness" Value="0.59" />
         <Setter Property="Margin" Value="0" />
         <Setter Property="Padding" Value="4" />
