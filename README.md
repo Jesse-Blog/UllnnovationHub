@@ -134,17 +134,14 @@ Windows 11 + Visual Studio 2022 Enterprise+ .NET 6.0
 
 ![image-20241125111618710](README.assets/image-20241125111618710.png)
 
-## 5.贡献者
-1. luo-chenchen：https://github.com/luo-chenchen
-2. he-ze-xi：https://github.com/he-ze-xi
 
-## 6.参考资料
+## 5.参考资料
 
 1. https://github.com/944095635/DMSkin
 2. https://github.com/DinoChan/Kino.Toolkit.Wpf
 3. https://github.com/JamesnetGroup/xamldesign.wpf
 
-## 7.致谢
+## 6.致谢
 
 如果你觉得本框架还不错的话，欢迎赞助一杯咖啡
 
