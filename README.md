@@ -141,10 +141,4 @@ Windows 11 + Visual Studio 2022 Enterprise+ .NET 6.0
 2. https://github.com/DinoChan/Kino.Toolkit.Wpf
 3. https://github.com/JamesnetGroup/xamldesign.wpf
 
-## 6.致谢
 
-如果你觉得本框架还不错的话，欢迎赞助一杯咖啡
-
-![](README.assets/wechat.png)
-
-![](README.assets/ali.png)
